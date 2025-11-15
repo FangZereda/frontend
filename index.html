@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Personagens — Desenhos</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <h1>Cartões de Personagens</h1>
+    <p class="subtitle">Consumo de API — Exemplo: Pokemon</p>
+  </header>
+
+  <main>
+    <section class="controls">
+      <input id="search" placeholder="Buscar por nome..." />
+      <button id="loadMore">Carregar mais</button>
+    </section>
+
+    <section id="cardsContainer" class="cards-container" aria-live="polite">
+      <!-- JS irá inserir cards aqui -->
+    </section>
+
+    <div id="loading" class="loading" hidden>Carregando...</div>
+    <div id="error" class="error" hidden>Erro ao carregar dados.</div>
+  </main>
+
+  <footer>
+    <small>Projeto Front-End — API pública</small>
+  </footer>
+
+  <script src="js/script.js" defer></script>
+</body>
+</html>
